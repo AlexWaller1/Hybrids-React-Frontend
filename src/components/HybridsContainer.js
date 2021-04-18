@@ -3,6 +3,8 @@
 import React, { Component } from 'react';
 import { connect } from 'redux'
 
+import { fetchHybrids } from '../actions/hybridsActions'
+
 class HybridsContainer extends Component {
     render() {
         return (
@@ -13,4 +15,4 @@ class HybridsContainer extends Component {
     }
 }
 
-export default HybridsContainer;
+export default connect()(HybridsContainer);
