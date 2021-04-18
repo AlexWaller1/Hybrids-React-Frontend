@@ -15,4 +15,4 @@ class HybridsContainer extends Component {
     }
 }
 
-export default connect()(HybridsContainer);
+export default connect(null, { fetchHybrids })(HybridsContainer);
