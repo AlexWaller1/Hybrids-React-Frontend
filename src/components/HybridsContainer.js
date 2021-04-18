@@ -9,7 +9,7 @@ class HybridsContainer extends Component {
     render() {
         return (
             <div>
-
+               Hybrids Container
             </div>
         );
     }
