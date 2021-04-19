@@ -1,11 +1,13 @@
 import React from 'react';
 
-import HybridsContainer from './HybridsContainer'
+import Router from './Router'
+
+
 
 const App = () => {
     return (
         <div>
-            Hello World
+            <Router />
         </div>
     );
 };
