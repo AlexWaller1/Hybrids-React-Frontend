@@ -15,5 +15,5 @@ export const addHybrid = hybrid => {
         headers: { 'Content-Type': 'application/json' }
     })
         .then(resp => resp.json())
-        .then(hybrids => dispatch({ type: 'FETCH_HYBRIDS', payload: hybrids}))
+        .then(hybrid => dispatch({ type: 'ADD_HYBRID', payload: hybrid}))
 }

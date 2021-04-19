@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+
+import { addHybrid } from '../actions/hybridsActions'
 
 class HybridsForm extends Component {
 
@@ -43,4 +46,4 @@ class HybridsForm extends Component {
     }
 }
 
-export default HybridsForm;
+export default connect(null, { addGrad })(HybridsForm);
