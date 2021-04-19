@@ -16,6 +16,7 @@ class HybridsContainer extends Component {
         return (
             <div>
                Hybrids Container
+               <HybridsForm />
             </div>
         );
     }
