@@ -21,10 +21,16 @@ class HybridsForm extends Component {
             [name]: value
         })
     }
+
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.addHybrid(this.state)
+    }
     
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
+                
                 <label>Hybrid Name:</label>
                 <input type='text' value={this.state.name} onChange={this.handleChange} name="name"/>
                 < br />
@@ -46,4 +52,4 @@ class HybridsForm extends Component {
     }
 }
 
-export default connect(null, { addGrad })(HybridsForm);
+export default connect(null, { addHybrid })(HybridsForm);
