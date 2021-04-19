@@ -1,4 +1,4 @@
-// create an action that is going to fetch the grads from api
+// create an action that is going to fetch the hybrids from api
 
 export const fetchHybrids = () => {
     return (dispatch) => {
