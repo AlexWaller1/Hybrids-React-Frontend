@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 const HybridsList = ({ hybrids }) => {
     return (
         <div>
-            {hybrids.map(hybrid => <ul><li>{hybrid.name} - {hybrid.species} - {hybrid.image}</li></ul>)}
+            {hybrids.map(hybrid => <ul><li key={hybrid.id}>{hybrid.name} - {hybrid.species} - {hybrid.image}</li></ul>)}
         </div>
     );
 };

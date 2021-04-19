@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 
 import Home from '../components/Home'
-import HybridsContainer from '../components/HybridsContainer'
+import HybridsList from '../components/HybridsList'
 import About from '../components/About'
 
 
@@ -11,7 +11,7 @@ const Router = () => {
        <Switch>
            <Route exact path='/' component={Home} />
            <Route path='/about' component={About} />
-           <Route path='/Hybrids' component={HybridsContainer} />
+           <Route path='/Hybrids' component={HybridsList} />
        </Switch>
     );
 };
