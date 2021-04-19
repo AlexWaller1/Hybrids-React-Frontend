@@ -7,3 +7,13 @@ export const fetchHybrids = () => {
         .then(hybrids => dispatch({ type: 'FETCH_HYBRIDS', payload: hybrids}))
     }
 }
+
+export const addHybrid = hybrid => {
+    fetch('http://localhost:3000/hybrids', {
+        method: 'POST',
+        body: JSON.stringify(hybrid),
+        headers: { 'Content-Type': 'application/json' }
+    })
+        .then(resp => resp.json())
+        .then(hybrids => dispatch({ type: 'FETCH_HYBRIDS', payload: hybrids}))
+}
