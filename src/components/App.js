@@ -1,3 +1,5 @@
+// root component of our application
+
 import React from 'react';
 
 import Router from './Router'
