@@ -27,3 +27,6 @@ const store = createStore(
         </Provider>,
         document.getElementById('root')
     )
+
+    // we're inserting our App into the root <div> of the DOM so we can
+    // use it in the browser
