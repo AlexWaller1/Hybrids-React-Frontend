@@ -47,6 +47,7 @@ class HybridsForm extends Component {
                 <input type='text' value={this.state.image} onChange={this.handleChange} name="image"/>
                 < br />
                 <input type='submit' value="Create Hybrid" />
+                < br />
             </form>
         );
     }
