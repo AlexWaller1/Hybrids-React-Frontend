@@ -40,3 +40,15 @@ export default App;
 // props are basically attributes
 // Components can have "state" which is an object that determines how
 // a component renders and behaves
+
+// an arrow function is a compact alternative to a traditional function
+// but is limited and can't be used in all situations
+// Arrow function does binding autmoatically and does not require 'this'
+// Arrow function has an implied (built-in) 'return' where 'return must be
+// explicitly expressed in a regular function
+// an arrow function is 'anonymous' which means it can't be called back
+// or used again. Only used when you need to use a function one time
+// In regular functions the 'this' keyword represents the object that
+// called the function, which could be the window, the document, a button, or whatever
+// With arrow functions the 'this' keyword always represents the object that
+// defined the arrow function.

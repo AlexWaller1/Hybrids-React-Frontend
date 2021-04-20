@@ -25,6 +25,7 @@ class HybridsForm extends Component {
     handleSubmit = e => {
         e.preventDefault()
         this.props.addHybrid(this.state)
+        // ask about this
     }
     
     render() {
@@ -54,3 +55,26 @@ class HybridsForm extends Component {
 }
 
 export default connect(null, { addHybrid })(HybridsForm);
+
+// in react, we can declare a variable and then use inside JSX by wrapping
+// it in curly braces / const dachshund = 'Bodhi' const hello = <h1>Hello, {dachshund}</h1>
+// in the reactDom.render(hello) function we can call the hello variable.
+// You can put any valid JavaScript expression inside the curly braces in JSX.
+// For example, 2 + 2, hybrid.name, or formatName(hybrid) are all valid JS expressions
+
+/* 
+function formatName(user){
+    return user.firstName + '' + user.lastName;
+}
+    const user = {
+        firstName: 'Harper',
+        lastName: 'Perez,
+    };
+
+    const element = (
+        <h1>
+        Hello, {formatName(user)}!
+        </h1>
+    );
+
+*/
