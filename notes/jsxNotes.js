@@ -244,6 +244,14 @@ that is sematic and declarative. Writing this:
 
 <h1 className='greeting'>Hello, world!</h1>
 
+is just much more pleasant. When we're building complex applications, where components can
+be children of other components, JSX provides a critical boost to readability.
 
+Ultimately, all the JSX code we write will get compiled down to standard JavaScript and turn
+into things like React.createElement .
+
+Every lab from now on already has the JSX transforming stuff to set up for you. You just
+need to run npm install and npm start to execute the JSX --> React run-able JavaScript 
+process.
 
 */
