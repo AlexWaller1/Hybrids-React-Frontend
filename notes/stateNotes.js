@@ -154,6 +154,11 @@ Conclusion
 - we update state with setState(), which is a method provided by the React.Component class
 - setState(0 is asynchronous)
 
+Component State
 
+What does setState do?
+
+setState() schedules an update to a component's state object. When state changes, the
+component responds by re-rendering.
 
 */
