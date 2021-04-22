@@ -161,4 +161,11 @@ What does setState do?
 setState() schedules an update to a component's state object. When state changes, the
 component responds by re-rendering.
 
+What is the difference between state and props?
+
+props (short for "properties") and state are both plain JavaScript objects. While both hold
+information that influences the out put of render, they are different in one important way:
+props get passed to the component (similar to function parameters) whereas state is
+managed within the component (similar to variables declared within a function).
+
 */
