@@ -115,3 +115,14 @@ class NavigationContainer extends Component {
   handleChange = event => { ... }
 } 
 
+Using this sort of set up, none of the imported components need to have their own state, nor do they need to have any functions defined. Container components, like NavigationContainer, deal with managing and class methods.
+
+Keeping all the more complex logic in one place makes it easier to follow the flow of information. It also keeps many compoents simpler and free of clutter.
+
+Container components, having to deal with state, are usually class components. Presentational components are most often functional components as they don't need to contain custom methods, relying mainly on props.
+
+Conclusion
+
+There are no hard and fast rules about presentational vs. container components. This dichotmoy is simply a common pattern for organizing your app. Presentational components can be switched to class components if needed.
+
+The main take away here is the difference between class and functional components. Class components are versatile and fully featured compoents. They can be anything we want them to be. Functional components exchange the class components's bels and whistles for simplicity and a small performance boost.
