@@ -1,5 +1,9 @@
 /* 
 
+What is Redux used for?
+
+Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments and are easy to test. While it's mostly used as a state management tool React, you can use it with any JavaScript framework or library.
+
 Benefits of moving to Redux
 
 Single Source of Truth
